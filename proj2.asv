@@ -8,7 +8,7 @@ imagesc(uint8(X_gray))
 colormap('gray')
 figure()
 hold on
-X_exposed=X_gray+150;
+X_exposed= X_double(:,:,1)+50/3.0 + X_double(:,:,2)+50/3.0 + X_double(:,:,3)+50/3.0;
 imagesc(uint8(X_exposed))
 colormap('gray')
 hold off
